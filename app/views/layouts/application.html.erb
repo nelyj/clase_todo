@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Todo</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
+    <% if account_signed_in? %>
+      <%= link_to "Cerrar Sesion", destroy_account_session_path, method: :delete %>
+    <% else %>
+      <%= link_to "Iniciar Sesion", "#" %>
+    <% end %>  
+    
+    <%= yield %>
+  </body>
+</html>

@@ -19,6 +19,8 @@ gem 'coffee-rails', '~> 4.2'
 gem 'devise'
 gem 'faker'
 gem 'will_paginate', '~> 3.1.0'
+gem 'bootstrap-sass', '~> 3.3.6'
+
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
